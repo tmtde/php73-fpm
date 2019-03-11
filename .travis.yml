@@ -1,0 +1,14 @@
+sudo: required
+
+services:
+  - docker
+
+install:
+  - docker build -t tmtde/fpm-73 .
+  - docker run -i -d tmtde/fpm-73
+
+script:
+  - docker ps | grep -q fpm-73
+  - docker run -i tmtde/fpm-73 php -v | grep -E "^PHP\s7\.3"
+  - docker run -i tmtde/fpm-73 composer --version
+  - docker run -i tmtde/fpm-73 php -r 'print (iconv("utf-8", "ASCII//TRANSLIT", "ströng contäning ümlaöits"));'
