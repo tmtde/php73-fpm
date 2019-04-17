@@ -3,7 +3,7 @@
 
 ## Description
 
-Docker image for PHP 7.2 based on the [official php 7.3 alpine image](https://github.com/docker-library/php/tree/master/7.3/alpine3.9/fpm) including [composer](https://getcomposer.org) and additional extensions enabled
+Docker image for PHP 7.3 based on the [official php 7.3 alpine image](https://github.com/docker-library/php/tree/master/7.3/alpine3.9/fpm) including [composer](https://getcomposer.org) and additional extensions enabled
 
 ## Extensions
 
